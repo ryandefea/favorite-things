@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Favorite Things</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Favorite Things</h1>
+    </div>
+  </div>
+  <div class="container">
+    <p></p>
+    <form id="favorites">
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input id="age" type="text">
+      </div>
+      <div class="form-group">
+        <label for="food">Food</label>
+          <select id="food">
+            <option value=""></option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Tofu Salad">Tofu Salad</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <label for="dog">Dog</label>
+          <select id="dog">
+            <option value=""></option>
+            <option value="husky">Husky</option>
+            <option value="beagle">Beagle</option>
+            <option value="pug">Pug</option>
+          </select>
+      </div>
+      <div class="list">
+        <ul>
+          <li id="ans1"></li>
+          <li id="ans2"></li> 
+        </ul>
+      </div>
+      
+      <div class="result-group">
+        <p>Your programming language is: <span id="match"></span></p>
+      <button type="submit" class="btn btn-dark">Find My Programming Language!</button>
+    </div>
+  </form>
+  <button type="click" id="hide-match" class="btn btn-dark">Click Here To Clear!</button>
+  </div>
+</body>
+</html>
